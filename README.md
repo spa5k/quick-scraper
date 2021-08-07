@@ -1,15 +1,15 @@
-# esbuild-typescript-library-template
+# quick-scraper
 
 A template for building a library through typescript and bundling it through esbuild.
 
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/esbuild-typescript-library-template?logo=files&style=for-the-badge)
-![npm](https://img.shields.io/npm/v/esbuild-typescript-library-template?logo=npm&style=for-the-badge)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/quick-scraper?logo=files&style=for-the-badge)
+![npm](https://img.shields.io/npm/v/quick-scraper?logo=npm&style=for-the-badge)
 ![node-current](https://img.shields.io/badge/Node-%3E=12-success?style=for-the-badge&logo=node)
-![npm](https://img.shields.io/npm/dw/esbuild-typescript-library-template?style=for-the-badge)
+![npm](https://img.shields.io/npm/dw/quick-scraper?style=for-the-badge)
 
 ## Getting started
 
-1. `git clone git@github.com:Unbuttun/esbuild-typescript-library-template.git my-project`
+1. `git clone git@github.com:Unbuttun/quick-scraper.git my-project`
 2. `cd my-project`
 3. `pnpm install`
 

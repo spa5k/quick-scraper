@@ -3,7 +3,7 @@
   "compilerOptions": {
     "module": "CommonJS",
     "lib": ["esnext"],
-    "importHelpers": true,
+
     "allowJs": false,
     // output .d.ts declaration files for consumers
     "declaration": true,
