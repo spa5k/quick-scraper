@@ -3,14 +3,14 @@ import type {
   QuickCrawler,
   QuickCrawlerOutput,
 } from "../types/QuickCrawlerType";
-import { scraper } from "../utils/scraper";
-import { selectorHandler } from "./selectorHandler";
+import { selectorHandler } from "../utils/selectorHandler";
+import { urlParser } from "../utils/urlParser";
 
-export const crawler = async ({
+export const quickScraper = async ({
   url,
   options,
 }: QuickCrawler): Promise<QuickCrawlerOutput> => {
-  const $ = await scraper(url);
+  const $ = await urlParser(url);
 
   const optionKeys = Object.keys(options);
 
@@ -18,13 +18,13 @@ export const crawler = async ({
 
   optionKeys.forEach((key) => {
     const object = options[key];
-    const { selector, href, attrs, listItem } = object;
+    const { selector, href, attrs, listItem, text = true } = object;
 
     if (listItem) {
       const lists: AttributeOutputs[] = [];
       $(selector).each((_i, childElement) => {
         const keyResult = selectorHandler({
-          text: true,
+          text,
           href,
           url,
           attrs,
@@ -39,7 +39,7 @@ export const crawler = async ({
       };
     } else {
       const keyResult = selectorHandler({
-        text: true,
+        text,
         data: $,
         selector,
         href,

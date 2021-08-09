@@ -4,7 +4,7 @@ import got from "got";
 import pkg from "iconv-lite";
 import { isUrlOnline } from "is-url-online";
 
-export const scraper = async (url: string): Promise<cheerio.Root> => {
+export const urlParser = async (url: string): Promise<cheerio.Root> => {
   const { decode } = pkg;
   const isUrlExist = await isUrlOnline(url);
   if (!isUrlExist) {

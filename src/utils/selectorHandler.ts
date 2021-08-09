@@ -1,5 +1,5 @@
 import type { AttributeOutputs } from "../types/QuickCrawlerType";
-import { selectorExtractor } from "../utils/selectorExtractor";
+import { selectorExtractor } from "./selectorExtractor";
 // Input will take the options -
 /*
 attributes the selector wants-
@@ -28,7 +28,7 @@ export const selectorHandler = ({
   childElement,
 }: SelectorHandler): AttributeOutputs => {
   const $ = data;
-  let output: Record<string, string> = {};
+  let output: AttributeOutputs = {};
 
   if (!$) {
     throw new Error("no data found");
