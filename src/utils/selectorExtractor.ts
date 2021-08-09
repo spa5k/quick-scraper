@@ -1,5 +1,6 @@
 import { isUrlString } from "is-url-online";
 import URL from "url";
+import type { AttributeOutputs } from "../types/QuickCrawlerType";
 
 type SelectorExtractor = {
   attrs?: Record<string, true>;
@@ -15,13 +16,13 @@ export const selectorExtractor = ({
   href,
   text,
   url,
-}: SelectorExtractor): Record<string, string> => {
+}: SelectorExtractor): AttributeOutputs => {
   const $ = data;
   if (!$) {
     throw new Error("e");
   }
 
-  const output: Record<string, string> = {};
+  const output: AttributeOutputs = {};
   if (text) {
     output.text = data.text();
   }
@@ -42,11 +43,16 @@ export const selectorExtractor = ({
   if (attrs) {
     const keys = Object.keys(attrs);
     keys.forEach((key) => {
-      const abcd = data.attr(key);
-      if (key && abcd) {
-        output[key] = abcd;
+      const attribute = data.attr(key);
+      if (key && attribute) {
+        output.attrs = {
+          [key]: attribute,
+        };
       }
     });
+  }
+  if (!text) {
+    delete output.text;
   }
   return output;
 };
