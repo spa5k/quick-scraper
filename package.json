@@ -11,9 +11,14 @@
       "@commitlint/config-conventional"
     ]
   },
-  "files": [
-    "dist"
-  ],
+  "dependencies": {
+    "chardet": "^1.3.0",
+    "cheerio": "^1.0.0-rc.10",
+    "got": "^11.8.2",
+    "htmlparser2": "^6.1.0",
+    "iconv-lite": "^0.6.3",
+    "is-url-online": "^1.0.3"
+  },
   "devDependencies": {
     "@commitlint/cli": "13.1.0",
     "@commitlint/config-conventional": "13.1.0",
@@ -23,6 +28,7 @@
     "@semantic-release/github": "7.2.3",
     "@semantic-release/npm": "7.1.3",
     "@semantic-release/release-notes-generator": "9.0.3",
+    "@types/cheerio": "^0.22.30",
     "@types/jest": "26.0.24",
     "@types/node": "16.4.13",
     "commitizen": "4.2.4",
@@ -32,14 +38,20 @@
     "esbuild-jest": "0.5.0",
     "eslint": "7.32.0",
     "eslint-config-galex": "2.16.7",
+    "eslint-plugin-typescript-sort-keys": "^1.7.0",
     "husky": "7.0.1",
     "jest": "27.0.6",
+    "nodemon": "^2.0.12",
     "prettier": "2.3.2",
     "semantic-release": "17.4.4",
     "tslib": "2.3.0",
     "tsup": "4.13.1",
+    "type-fest": "^2.0.0",
     "typescript": "4.3.5"
   },
+  "files": [
+    "dist"
+  ],
   "homepage": "https://github.com/Unbuttun/quick-scraper#readme",
   "husky": {
     "hooks": {
@@ -48,13 +60,13 @@
     }
   },
   "keywords": [
-    "esbuild",
-    "library",
-    "typescript",
-    "template",
-    "dts",
     "cjs",
-    "esm"
+    "dts",
+    "esbuild",
+    "esm",
+    "library",
+    "template",
+    "typescript"
   ],
   "license": "MIT",
   "main": "dist/index.js",
@@ -66,18 +78,12 @@
   "scripts": {
     "build": "NODE_ENV='production' tsup-node",
     "build:dev": "NODE_ENV='development' tsup-node",
+    "cz": "cz",
+    "dev": "nodemon dist/index.js",
     "format": "prettier --write .",
     "lint": "eslint src --ext .ts",
-    "test": "jest",
-    "cz": "cz",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "test": "jest"
   },
-  "typings": "dist/index.d.ts",
-  "dependencies": {
-    "chardet": "^1.3.0",
-    "got": "^11.8.2",
-    "htmlparser2": "^6.1.0",
-    "iconv-lite": "^0.6.3",
-    "is-url-online": "^1.0.3"
-  }
+  "typings": "dist/index.d.ts"
 }
