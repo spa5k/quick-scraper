@@ -1,1 +1,1 @@
-export * from "./modules/quickScraper";
+export * from "./modules";
