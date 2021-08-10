@@ -2,7 +2,7 @@
 
 ![Hero Image](./assets/quick-scraper.png)
 
-An easy, lightweight scraper for humans with many inbuilt features..
+An easy, lightweight scraper built using typescript for good developer experience.
 
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/quick-scraper?logo=files&style=for-the-badge)
 ![npm](https://img.shields.io/npm/v/quick-scraper?logo=npm&style=for-the-badge)
