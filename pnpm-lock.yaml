@@ -10,7 +10,7 @@ specifiers:
   '@semantic-release/npm': 7.1.3
   '@semantic-release/release-notes-generator': 9.0.3
   '@types/cheerio': ^0.22.30
-  '@types/jest': 26.0.24
+  '@types/jest': 27.0.0
   '@types/node': 16.4.13
   chardet: ^1.3.0
   cheerio: ^1.0.0-rc.10
@@ -52,7 +52,7 @@ devDependencies:
   '@semantic-release/npm': 7.1.3_semantic-release@17.4.4
   '@semantic-release/release-notes-generator': 9.0.3_semantic-release@17.4.4
   '@types/cheerio': 0.22.30
-  '@types/jest': 26.0.24
+  '@types/jest': 27.0.0
   '@types/node': 16.4.13
   commitizen: 4.2.4
   cz-conventional-changelog: 3.3.0
@@ -1313,8 +1313,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/26.0.24:
-    resolution: {integrity: sha512-E/X5Vib8BWqZNRlDxj9vYXhsDwPYbPINqKF9BsnSoon4RQ0D9moEuLD8txgyypFLH7J4+Lho9Nr/c8H0Fi+17w==}
+  /@types/jest/27.0.0:
+    resolution: {integrity: sha512-IlpQZVpxufe+3qPaAqEoSPHVSxnJh1cf0BqqWHJeKiAUbwnHdmNzjP3ZCWSZSTbmAGXQPNk9QmM3Bif0pR54rg==}
     dependencies:
       jest-diff: 26.6.2
       pretty-format: 26.6.2
