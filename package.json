@@ -1,6 +1,6 @@
 {
   "name": "quick-scraper",
-  "description": "Typescript Esbuild Library Template",
+  "description": "An easy, lightweight scraper for humans with many inbuilt features..",
   "version": "0.0.1",
   "author": "Unbuttun <unbuttun@gmail.com>",
   "bugs": {
@@ -59,13 +59,13 @@
     }
   },
   "keywords": [
-    "cjs",
-    "dts",
-    "esbuild",
-    "esm",
-    "library",
-    "template",
-    "typescript"
+    "scraper",
+    "decoding",
+    "iconv",
+    "utf-8",
+    "quick",
+    "spider",
+    "crawler"
   ],
   "license": "MIT",
   "main": "dist/index.js",
