@@ -1,7 +1,9 @@
 {
-  "extends": ["galex"],
+  "extends": ["galex", "plugin:typescript-sort-keys/recommended"],
   "env": { "node": true },
+  "plugins": ["typescript-sort-keys"],
   "rules": {
-    "no-console": "off"
+    "no-console": "off",
+    "import/order": "off"
   }
 }
