@@ -1,5 +1,7 @@
 # Quick Scraper
 
+![Hero Image](./assets/quick-scraper.png)
+
 An easy, lightweight scraper for humans with many inbuilt features..
 
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/quick-scraper?logo=files&style=for-the-badge)
@@ -188,8 +190,6 @@ scrapedData.data.test.lists?
 *
 /
 ```
-
-
 ### Visualization of this Repo.
 ![Visualization of this repo](./diagram.svg)
 
@@ -197,3 +197,11 @@ scrapedData.data.test.lists?
 
 - Add support for custom nth number in list.
 - Add more tests.
+
+
+### Libraries Used
+- [is-url-online](https://github.com/Unbuttun/is-url-online)
+- [Chardet](https://github.com/runk/node-chardet)
+- [iconv-lite](https://github.com/ashtuchkin/iconv-lite)
+- [cheerio](https://github.com/cheeriojs/cheerio)
+- [got](https://github.com/sindresorhus/got)
