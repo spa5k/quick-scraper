@@ -1,6 +1,12 @@
 # Quick Scraper
 
-A easy, lightweight scraper for humans with many inbuilt features.
+An easy, lightweight scraper for humans with many inbuilt features..
+
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/quick-scraper?logo=files&style=for-the-badge)
+![npm](https://img.shields.io/npm/v/quick-scraper?logo=npm&style=for-the-badge)
+![node-current](https://img.shields.io/badge/Node-%3E=12-success?style=for-the-badge&logo=node)
+![npm](https://img.shields.io/npm/dw/quick-scraper?style=for-the-badge)
+
 
 ## Features.
 
@@ -182,6 +188,10 @@ scrapedData.data.test.lists?
 *
 /
 ```
+
+
+### Visualization of this Repo.
+![Visualization of this repo](./diagram.svg)
 
 ### TODO
 
