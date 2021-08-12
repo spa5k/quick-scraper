@@ -6,5 +6,5 @@ assets
 test
 renovate.json
 .prettierignore
-
+release.config.js
 CHANGELOG.md
