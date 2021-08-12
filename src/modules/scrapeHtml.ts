@@ -20,7 +20,13 @@ export const scrapeHtml = async ({
   const url = baseUrl ? baseUrl : "";
   optionKeys.forEach((key) => {
     const object = options[key];
-    const { selector, href, attrs, listItem, text = true } = object;
+    const {
+      selector,
+      href,
+      customAttributes: attrs,
+      listItem,
+      text = true,
+    } = object;
 
     if (listItem) {
       const lists: AttributeOutputs[] = [];

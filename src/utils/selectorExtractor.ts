@@ -45,7 +45,7 @@ export const selectorExtractor = ({
     keys.forEach((key) => {
       const attribute = data.attr(key);
       if (key && attribute) {
-        output.attrs = {
+        output.customAttributes = {
           [key]: attribute,
         };
       }

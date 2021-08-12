@@ -9,7 +9,6 @@ An easy, lightweight scraper built using typescript for good developer experienc
 ![node-current](https://img.shields.io/badge/Node-%3E=12-success?style=for-the-badge&logo=node)
 ![npm](https://img.shields.io/npm/dw/quick-scraper?style=for-the-badge)
 
-
 ## Features.
 
 - If it works in cheerio, it will work here.
@@ -190,16 +189,19 @@ scrapedData.data.test.lists?
 *
 /
 ```
+
 ### Visualization of this Repo.
+
 ![Visualization of this repo](./diagram.svg)
 
 ### TODO
 
 - Add support for custom nth number in list.
 - Add more tests.
-
+- Direct transformation functions to deal with the scraped results and outputting it.
 
 ### Libraries Used
+
 - [is-url-online](https://github.com/Unbuttun/is-url-online)
 - [Chardet](https://github.com/runk/node-chardet)
 - [iconv-lite](https://github.com/ashtuchkin/iconv-lite)

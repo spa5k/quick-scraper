@@ -51,12 +51,12 @@ describe("Test for PTWXZ - TEXT SELECTION", () => {
             test: {
               selector,
               text,
-              attrs: {
+              customAttributes: {
                 [name]: true,
               },
             },
           },
-        }).then((scrapedData) => scrapedData.data.test.attrs![name])
+        }).then((scrapedData) => scrapedData.data.test.customAttributes![name])
       ).toBe(output);
     });
   });

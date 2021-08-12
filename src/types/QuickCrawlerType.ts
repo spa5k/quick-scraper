@@ -10,10 +10,9 @@ export type QuickCrawlerHtml = {
 };
 
 export type SelectorOptions = {
-  attrs?: Record<string, true> | undefined;
+  customAttributes?: Record<string, true>;
   href?: boolean;
   listItem?: boolean;
-  nth?: number;
   selector: string;
   text?: boolean;
 };
@@ -21,16 +20,15 @@ export type SelectorOptions = {
 // abc.text, abc.href, abc.attrs.customAttribute.
 
 export type AttributeOutputs = {
-  attrs?: Record<string, string>;
+  customAttributes?: Record<string, string>;
   href?: string;
   lists?: AttributeOutputs[];
   text?: string;
 };
 
 // output.raw=cheerio; output.data.text=something
-export type DefaultOutputTypes = {
+
+export type QuickCrawlerOutput = {
   data: Record<string, AttributeOutputs>;
   raw: cheerio.Root;
 };
-
-export type QuickCrawlerOutput = DefaultOutputTypes;

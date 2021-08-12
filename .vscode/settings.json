@@ -5,6 +5,7 @@
     "actions",
     "scraper",
     "tests",
-    "README"
+    "README",
+    "types"
   ]
 }
