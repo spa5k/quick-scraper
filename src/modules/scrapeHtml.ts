@@ -1,7 +1,7 @@
 import type {
   AttributeOutputs,
   QuickCrawlerHtml,
-  QuickCrawlerOutput,
+  QuickCrawlerOutput
 } from "../types/QuickCrawlerType";
 import { htmlParser } from "../utils/htmlParser";
 import { selectorHandler } from "../utils/selectorHandler";
