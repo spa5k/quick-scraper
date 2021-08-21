@@ -5,7 +5,12 @@ import type {
 } from "../types/QuickCrawlerType";
 import { selectorHandler } from "../utils/selectorHandler";
 import { urlParser } from "../utils/urlParser";
-
+/**
+ * @param  {} {url}
+ * @param  {} options QuickCrawler
+ * @returns Promise output
+ * @description Scrapes the page through the URL
+ */
 export const quickScraper = async ({
   url,
   options,
@@ -28,7 +33,7 @@ export const quickScraper = async ({
 
     if (listItem) {
       const lists: AttributeOutputs[] = [];
-      $(selector).each((_i, childElement) => {
+      $(selector).each((_i: number, childElement: cheerio.Element) => {
         const keyResult = selectorHandler({
           text,
           href,

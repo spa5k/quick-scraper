@@ -6,6 +6,7 @@
     "scraper",
     "tests",
     "README",
-    "types"
+    "types",
+    "lint"
   ]
 }
