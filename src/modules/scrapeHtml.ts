@@ -1,11 +1,18 @@
 import type {
   AttributeOutputs,
   QuickCrawlerHtml,
-  QuickCrawlerOutput
+  QuickCrawlerOutput,
 } from "../types/QuickCrawlerType";
 import { htmlParser } from "../utils/htmlParser";
 import { selectorHandler } from "../utils/selectorHandler";
 
+/**
+ * @html  String
+ * @param  {} options
+ * @param  {} baseUrl
+ * @returns Promise<QuickCrawlerHtml>
+ * @description Scrapes the HTML string
+ */
 export const scrapeHtml = async ({
   html,
   options,
@@ -30,7 +37,7 @@ export const scrapeHtml = async ({
 
     if (listItem) {
       const lists: AttributeOutputs[] = [];
-      $(selector).each((_i, childElement) => {
+      $(selector).each((_i: any, childElement: any) => {
         const keyResult = selectorHandler({
           text,
           href,
