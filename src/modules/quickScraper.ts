@@ -1,7 +1,7 @@
 import type {
   AttributeOutputs,
   QuickCrawler,
-  QuickCrawlerOutput,
+  QuickCrawlerOutput
 } from "../types/QuickCrawlerType";
 import { selectorHandler } from "../utils/selectorHandler";
 import { urlParser } from "../utils/urlParser";
@@ -33,7 +33,7 @@ export const quickScraper = async ({
 
     if (listItem) {
       const lists: AttributeOutputs[] = [];
-      $(selector).each((_i: any, childElement: any) => {
+      $(selector).each((_i: number, childElement: cheerio.Element) => {
         const keyResult = selectorHandler({
           text,
           href,
