@@ -1,7 +1,7 @@
 import type {
   AttributeOutputs,
   QuickCrawler,
-  QuickCrawlerOutput,
+  QuickCrawlerOutput
 } from "../types/QuickCrawlerType";
 import { selectorHandler } from "../utils/selectorHandler";
 import { urlParser } from "../utils/urlParser";
@@ -18,7 +18,13 @@ export const quickScraper = async ({
 
   optionKeys.forEach((key) => {
     const object = options[key];
-    const { selector, href, attrs, listItem, text = true } = object;
+    const {
+      selector,
+      href,
+      customAttributes: attrs,
+      listItem,
+      text = true,
+    } = object;
 
     if (listItem) {
       const lists: AttributeOutputs[] = [];

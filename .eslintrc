@@ -4,6 +4,11 @@
   "plugins": ["typescript-sort-keys"],
   "rules": {
     "no-console": "off",
+<<<<<<< HEAD
     "import/order": "off"
+=======
+    "import/order": "off",
+    "no-template-curly-in-string": "off"
+>>>>>>> main
   }
 }

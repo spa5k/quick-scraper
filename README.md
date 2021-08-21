@@ -2,13 +2,12 @@
 
 ![Hero Image](./assets/quick-scraper.png)
 
-An easy, lightweight scraper for humans with many inbuilt features..
+An easy, lightweight scraper built using typescript for good developer experience.
 
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/quick-scraper?logo=files&style=for-the-badge)
 ![npm](https://img.shields.io/npm/v/quick-scraper?logo=npm&style=for-the-badge)
 ![node-current](https://img.shields.io/badge/Node-%3E=12-success?style=for-the-badge&logo=node)
 ![npm](https://img.shields.io/npm/dw/quick-scraper?style=for-the-badge)
-
 
 ## Features.
 
@@ -201,15 +200,17 @@ scrapedData.data.test.lists?
 /
 ```
 ### Visualization of this Repo.
+
 ![Visualization of this repo](./diagram.svg)
 
 ### TODO
 
 - Add support for custom nth number in list.
 - Add more tests.
-
+- Direct transformation functions to deal with the scraped results and outputting it.
 
 ### Libraries Used
+
 - [is-url-online](https://github.com/Unbuttun/is-url-online)
 - [Chardet](https://github.com/runk/node-chardet)
 - [iconv-lite](https://github.com/ashtuchkin/iconv-lite)
