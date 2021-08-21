@@ -17,6 +17,16 @@ An easy, lightweight scraper for humans with many inbuilt features..
 - Built on typescript.
 - Great editor support.
 
+### Cons.
+- It doesn't play well with nested structures like
+```html
+  <p>
+    abcd
+    <a href='abcd'>Some Url</a>
+  </p>
+```
+In this case, if you want to select the text `abcd`, it won't work ootb as there are some limitiations in the way jquery does it directly, to handle such cases, use the raw output object and then apply the logic in there.
+
 ## Installation
 
 Yarn
