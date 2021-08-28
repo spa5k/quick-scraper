@@ -22,7 +22,7 @@ specifiers:
   eslint-config-galex: 2.16.9
   eslint-plugin-typescript-sort-keys: 1.8.0
   got: ^11.8.2
-  husky: 7.0.1
+  husky: 7.0.2
   iconv-lite: ^0.6.3
   is-url-online: ^1.1.0
   jest: 27.0.6
@@ -60,7 +60,7 @@ devDependencies:
   eslint: 7.32.0
   eslint-config-galex: 2.16.9_eslint@7.32.0
   eslint-plugin-typescript-sort-keys: 1.8.0_eslint@7.32.0+typescript@4.3.5
-  husky: 7.0.1
+  husky: 7.0.2
   jest: 27.0.6
   nodemon: 2.0.12
   prettier: 2.3.2
@@ -4039,8 +4039,8 @@ packages:
     resolution: {integrity: sha1-3QLqYIG9BWjcXQcxhEY5V7qe+ao=}
     dev: true
 
-  /husky/7.0.1:
-    resolution: {integrity: sha512-gceRaITVZ+cJH9sNHqx5tFwbzlLCVxtVZcusME8JYQ8Edy5mpGDOqD8QBCdMhpyo9a+JXddnujQ4rpY2Ff9SJA==}
+  /husky/7.0.2:
+    resolution: {integrity: sha512-8yKEWNX4z2YsofXAMT7KvA1g8p+GxtB1ffV8XtpAEGuXNAbCV5wdNKH+qTpw8SM9fh4aMPDR+yQuKfgnreyZlg==}
     engines: {node: '>=12'}
     hasBin: true
     dev: true
