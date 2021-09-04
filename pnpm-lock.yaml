@@ -19,7 +19,7 @@ specifiers:
   esbuild: 0.12.25
   esbuild-jest: 0.5.0
   eslint: 7.32.0
-  eslint-config-galex: 2.16.10
+  eslint-config-galex: 2.16.11
   eslint-plugin-typescript-sort-keys: 1.8.0
   got: ^11.8.2
   husky: 7.0.2
@@ -58,7 +58,7 @@ devDependencies:
   esbuild: 0.12.25
   esbuild-jest: 0.5.0_esbuild@0.12.25
   eslint: 7.32.0
-  eslint-config-galex: 2.16.10_eslint@7.32.0
+  eslint-config-galex: 2.16.11_eslint@7.32.0
   eslint-plugin-typescript-sort-keys: 1.8.0_eslint@7.32.0+typescript@4.4.2
   husky: 7.0.2
   jest: 27.1.0
@@ -2951,8 +2951,8 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /eslint-config-galex/2.16.10_eslint@7.32.0:
-    resolution: {integrity: sha512-oBMwkrNkbUMRWPA18iiPFhxfTXXqzeD5mUFIMgZUYRssz9zWg3Hxi4NCFSlpljzQ5YsAMJr23o1pPicRQmErdg==}
+  /eslint-config-galex/2.16.11_eslint@7.32.0:
+    resolution: {integrity: sha512-iXmyThNXGrUpJIU8OXLkGYrpd66q2xEkTfBMYgzkmZ0ego0FNeVg1BJMAlb8uMWAc31P688NU0kzvWZCWxTADw==}
     engines: {node: '>=12'}
     peerDependencies:
       eslint: '>=7.15.0'
@@ -3069,7 +3069,7 @@ packages:
         optional: true
     dependencies:
       '@typescript-eslint/eslint-plugin': 4.29.3_5b13bab190e8051f191796d8c4619073
-      '@typescript-eslint/experimental-utils': 4.29.2_eslint@7.32.0+typescript@4.4.2
+      '@typescript-eslint/experimental-utils': 4.29.3_eslint@7.32.0+typescript@4.4.2
       eslint: 7.32.0
     transitivePeerDependencies:
       - supports-color
