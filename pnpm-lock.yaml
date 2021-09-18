@@ -27,7 +27,7 @@ specifiers:
   is-url-online: ^1.1.0
   jest: 27.1.1
   nodemon: 2.0.12
-  prettier: 2.4.0
+  prettier: 2.4.1
   semantic-release: 17.4.7
   tslib: 2.3.1
   tsup: 4.14.0
@@ -63,7 +63,7 @@ devDependencies:
   husky: 7.0.2
   jest: 27.1.1
   nodemon: 2.0.12
-  prettier: 2.4.0
+  prettier: 2.4.1
   semantic-release: 17.4.7
   tslib: 2.3.1
   tsup: 4.14.0_typescript@4.4.3
@@ -6535,8 +6535,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /prettier/2.4.0:
-    resolution: {integrity: sha512-DsEPLY1dE5HF3BxCRBmD4uYZ+5DCbvatnolqTqcxEgKVZnL2kUfyu7b8pPQ5+hTBkdhU9SLUmK0/pHb07RE4WQ==}
+  /prettier/2.4.1:
+    resolution: {integrity: sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
