@@ -16,7 +16,7 @@ specifiers:
   cheerio: ^1.0.0-rc.10
   commitizen: 4.2.4
   dotenv: 10.0.0
-  esbuild: 0.12.26
+  esbuild: 0.12.28
   esbuild-jest: 0.5.0
   eslint: 7.32.0
   eslint-config-galex: 2.16.11
@@ -55,8 +55,8 @@ devDependencies:
   '@types/node': 16.7.1
   commitizen: 4.2.4
   dotenv: 10.0.0
-  esbuild: 0.12.26
-  esbuild-jest: 0.5.0_esbuild@0.12.26
+  esbuild: 0.12.28
+  esbuild-jest: 0.5.0_esbuild@0.12.28
   eslint: 7.32.0
   eslint-config-galex: 2.16.11_eslint@7.32.0
   eslint-plugin-typescript-sort-keys: 1.8.0_eslint@7.32.0+typescript@4.4.3
@@ -2888,7 +2888,7 @@ packages:
       is-symbol: 1.0.4
     dev: true
 
-  /esbuild-jest/0.5.0_esbuild@0.12.26:
+  /esbuild-jest/0.5.0_esbuild@0.12.28:
     resolution: {integrity: sha512-AMZZCdEpXfNVOIDvURlqYyHwC8qC1/BFjgsrOiSL1eyiIArVtHL8YAC83Shhn16cYYoAWEW17yZn0W/RJKJKHQ==}
     peerDependencies:
       esbuild: '>=0.8.50'
@@ -2896,7 +2896,7 @@ packages:
       '@babel/core': 7.15.0
       '@babel/plugin-transform-modules-commonjs': 7.15.0_@babel+core@7.15.0
       babel-jest: 26.6.3_@babel+core@7.15.0
-      esbuild: 0.12.26
+      esbuild: 0.12.28
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2907,8 +2907,8 @@ packages:
     requiresBuild: true
     dev: true
 
-  /esbuild/0.12.26:
-    resolution: {integrity: sha512-YmTkhPKjvTJ+G5e96NyhGf69bP+hzO0DscqaVJTi5GM34uaD4Ecj7omu5lJO+NrxCUBRhy2chONLK1h/2LwoXA==}
+  /esbuild/0.12.28:
+    resolution: {integrity: sha512-pZ0FrWZXlvQOATlp14lRSk1N9GkeJ3vLIwOcUoo3ICQn9WNR4rWoNi81pbn6sC1iYUy7QPqNzI3+AEzokwyVcA==}
     hasBin: true
     requiresBuild: true
     dev: true
@@ -3663,6 +3663,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -7534,6 +7535,7 @@ packages:
     resolution: {integrity: sha512-JhS3hmcVaXlp/xSo3PKY5R0JqKs5M3IV+exdLHW99qKvKivPO4Z8qbej6mte17SOPqAOVMjt/XGgWacnFSzM3g==}
     engines: {node: '>=0.8.0'}
     hasBin: true
+    requiresBuild: true
     dev: true
     optional: true
 
