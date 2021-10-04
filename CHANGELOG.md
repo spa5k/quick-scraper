@@ -1,9 +1,8 @@
 # [1.1.0](https://github.com/Unbuttun/quick-scraper/compare/v1.0.1...v1.1.0) (2021-08-21)
 
-
 ### Features
 
-* **main:** ✨ Adding  jsdoc ([#19](https://github.com/Unbuttun/quick-scraper/issues/19)) ([0d7cb21](https://github.com/Unbuttun/quick-scraper/commit/0d7cb217dc1f8be4fe101ab31c96bd6d1a272610))
+- **main:** ✨ Adding jsdoc ([#19](https://github.com/Unbuttun/quick-scraper/issues/19)) ([0d7cb21](https://github.com/Unbuttun/quick-scraper/commit/0d7cb217dc1f8be4fe101ab31c96bd6d1a272610))
 
 # 0.1.0 (2021-08-04)
 

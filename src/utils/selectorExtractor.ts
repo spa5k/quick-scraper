@@ -29,9 +29,9 @@ export const selectorExtractor = ({
 
   if (href) {
     let href = data.prop("href");
-    try {
-      isUrlString(href);
-    } catch {
+
+    const urlString = isUrlString(href);
+    if (!urlString) {
       const { href: absoluteUrl } = new URL.URL(href, url);
 
       href = absoluteUrl;

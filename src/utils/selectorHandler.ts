@@ -28,7 +28,6 @@ export const selectorHandler = ({
   childElement,
 }: SelectorHandler): AttributeOutputs => {
   const $ = data;
-  let output: AttributeOutputs = {};
 
   if (!$) {
     throw new Error("no data found");
@@ -45,13 +44,11 @@ export const selectorHandler = ({
     });
   }
   const selectedNode = $(selector);
-  output = selectorExtractor({
+  return selectorExtractor({
     attrs,
     data: selectedNode,
     href,
     text,
     url,
   });
-
-  return output;
 };
