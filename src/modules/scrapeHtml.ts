@@ -1,7 +1,7 @@
 import type {
   AttributeOutputs,
   QuickCrawlerHtml,
-  QuickCrawlerOutput
+  QuickCrawlerOutput,
 } from "../types/QuickCrawlerType";
 import { htmlParser } from "../utils/htmlParser";
 import { selectorHandler } from "../utils/selectorHandler";
@@ -13,6 +13,7 @@ import { selectorHandler } from "../utils/selectorHandler";
  * @returns Promise<QuickCrawlerHtml>
  * @description Scrapes the HTML string
  */
+
 export const scrapeHtml = async ({
   html,
   options,

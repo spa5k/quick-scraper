@@ -1,16 +1,18 @@
 import type {
   AttributeOutputs,
   QuickCrawler,
-  QuickCrawlerOutput
+  QuickCrawlerOutput,
 } from "../types/QuickCrawlerType";
 import { selectorHandler } from "../utils/selectorHandler";
 import { urlParser } from "../utils/urlParser";
+
 /**
  * @param  {} {url}
  * @param  {} options QuickCrawler
  * @returns Promise output
  * @description Scrapes the page through the URL
  */
+
 export const quickScraper = async ({
   url,
   options,
