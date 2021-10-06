@@ -215,7 +215,7 @@ scrapedData.data.test.lists?
 
 ### Libraries Used
 
-- [is-url-online](https://github.com/Unbuttun/is-url-online)
+- [is-url-online](https://github.com/spa5k/is-url-online)
 - [Chardet](https://github.com/runk/node-chardet)
 - [iconv-lite](https://github.com/ashtuchkin/iconv-lite)
 - [cheerio](https://github.com/cheeriojs/cheerio)
