@@ -14,7 +14,7 @@ module.exports = {
       prerelease: true,
     },
   ],
-  repositoryUrl: "https://github.com/Unbuttun/quick-scraper.git",
+  repositoryUrl: "https://github.com/spa5k/quick-scraper.git",
   plugins: [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
