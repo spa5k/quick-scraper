@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/spa5k/quick-scraper/compare/v1.2.0...v1.2.1) (2021-10-06)
+
+
+### Bug Fixes
+
+* **docs:** bug moving from unbuttun to spa5k ([67a79db](https://github.com/spa5k/quick-scraper/commit/67a79db201e47b15b3add5bdf9d8d904b3c505bf))
+
 <<<<<<< HEAD
 # [1.1.0](https://github.com/spa5k/quick-scraper/compare/v1.0.1...v1.1.0) (2021-08-21)
 
