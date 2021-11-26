@@ -1,4 +1,5 @@
-import { quickScraper } from "../src";
+import puppeteer from "puppeteer";
+import { quickScraperHeadless } from "../src";
 
 const testsArray: {
   output: string;
@@ -22,20 +23,27 @@ const testsArray: {
     output: "TypeScript execution and REPL for node.js",
   },
 ];
+jest.setTimeout(25_000);
 
-describe("Test for PTWXZ - TEXT SELECTION", () => {
+describe("Test for PTWXZ - TEXT SELECTION - HEADLESS", () => {
   testsArray.forEach(({ output, selector, url }, index) => {
     test(`#${index + 1}: Testing ${url}`, async () => {
+      const browser = await puppeteer.launch({ headless: true });
+      const page = await browser.newPage();
+
       await expect(
-        quickScraper({
+        quickScraperHeadless({
           url,
           options: {
             test: {
               selector,
             },
           },
+          page,
         }).then((scrapedData) => scrapedData.data.test.text)
       ).resolves.toBe(output);
+
+      await browser.close();
     });
   });
 });

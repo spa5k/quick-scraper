@@ -1,6 +1,6 @@
 import { isUrlString } from "is-url-online";
 import URL from "url";
-import type { AttributeOutputs } from "../types/QuickCrawlerType";
+import type { AttributeOutputs } from "../types/QuickScraperType";
 
 type SelectorExtractor = {
   attrs?: Record<string, true>;

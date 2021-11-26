@@ -131,6 +131,55 @@ await scrapeHtml({
 /
 ```
 
+### Headless Quick Scrape
+
+```ts
+import { quickScraperHeadless } from "quick-scraper";
+
+const browser = await puppeteer.launch({ headless: true });
+const page = await browser.newPage();
+
+await quickScraperHeadless({
+  url: "https://typestrong.org/ts-node/",
+  options: {
+    title: {
+      // This property can be changed to the name you want.
+      selector: ".hero__subtitle",
+    },
+    docs: {
+      selector: "a.navbar__item:nth-child(1)",
+      text: false, // Text is enabled by default, so you need to disable it explicitly.
+      href: true, // One of the attribute that's available by default.
+    },
+    releaseNotes:{
+      selector: "a.navbar__item:nth-child(3)",
+      text: true, // You can also enable multiple attributes at once.
+      href: true,
+    }
+  },
+  page: page
+});
+
+// Output
+/*
+
+{
+  raw: [Function: initialize] {}, // It's the default output from cheerio, use it as you like.
+  data: {
+    title: { text: 'TypeScript execution and REPL for node.js' },
+    docs: { href: 'https://typestrong.org/ts-node/docs/' },
+    releaseNotes: {
+      text: 'Release Notes',
+      href: 'https://github.com/TypeStrong/ts-node/releases'
+    }
+  }
+}
+*
+/
+```
+
+
+
 ### More Examples.
 
 #### Custom Attribute

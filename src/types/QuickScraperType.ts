@@ -1,9 +1,17 @@
-export type QuickCrawler = {
+import type { Page } from "puppeteer";
+
+export type QuickScraper = {
   options: Record<string, SelectorOptions>;
   url: string;
 };
 
-export type QuickCrawlerHtml = {
+export type QuickScraperHeadless = {
+  options: Record<string, SelectorOptions>;
+  page: Page;
+  url: string;
+};
+
+export type QuickScraperHtml = {
   baseUrl?: string;
   html: string;
   options: Record<string, SelectorOptions>;
@@ -24,7 +32,7 @@ export type AttributeOutputs = {
   text?: string;
 };
 
-export type QuickCrawlerOutput = {
+export type QuickScraperOutput = {
   data: Record<string, AttributeOutputs>;
   raw: cheerio.Root;
 };

@@ -1,23 +1,24 @@
 import type {
   AttributeOutputs,
-  QuickScraper,
+  QuickScraperHeadless,
   QuickScraperOutput,
 } from "../types/QuickScraperType";
 import { selectorHandler } from "../utils/selectorHandler";
-import { urlParser } from "../utils/urlParser";
+import { urlParserHeadless } from "../utils/urlParserHeadless";
 
 /**
- * @param  {} {url}
+ * @param  {} url Url to be scraped
+ * @param {} page Puppeteer Page Object
  * @param  {} options QuickScraper
  * @returns Promise output
- * @description Scrapes the page through the URL
+ * @description Scrapes the page through the URL by using headless browser
  */
-
-export const quickScraper = async ({
+export const quickScraperHeadless = async ({
   url,
   options,
-}: QuickScraper): Promise<QuickScraperOutput> => {
-  const $ = await urlParser(url);
+  page,
+}: QuickScraperHeadless): Promise<QuickScraperOutput> => {
+  const $ = await urlParserHeadless(url, page);
 
   const optionKeys = Object.keys(options);
 
