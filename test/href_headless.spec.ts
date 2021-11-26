@@ -1,4 +1,5 @@
-import { quickScraper } from "../src";
+import puppeteer from "puppeteer";
+import { quickScraperHeadless } from "../src";
 
 const testsArray: {
   href: true;
@@ -31,11 +32,16 @@ const testsArray: {
   },
 ];
 
-describe("Test for PTWXZ - TEXT SELECTION", () => {
+jest.setTimeout(25_000);
+
+describe("Test for PTWXZ - TEXT SELECTION - HEADLESS", () => {
   testsArray.forEach(({ output, selector, text, url, href }, index) => {
     test(`#${index + 1}: Testing ${url}`, async () => {
+      const browser = await puppeteer.launch({ headless: true });
+      const page = await browser.newPage();
+
       await expect(
-        quickScraper({
+        quickScraperHeadless({
           url,
           options: {
             test: {
@@ -44,8 +50,11 @@ describe("Test for PTWXZ - TEXT SELECTION", () => {
               href,
             },
           },
+          page,
         }).then((scrapedData) => scrapedData.data.test.href)
       ).resolves.toBe(output);
+
+      await browser.close();
     });
   });
 });

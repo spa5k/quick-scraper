@@ -1,8 +1,8 @@
 import type {
   AttributeOutputs,
-  QuickCrawlerHtml,
-  QuickCrawlerOutput,
-} from "../types/QuickCrawlerType";
+  QuickScraperHtml,
+  QuickScraperOutput,
+} from "../types/QuickScraperType";
 import { htmlParser } from "../utils/htmlParser";
 import { selectorHandler } from "../utils/selectorHandler";
 
@@ -10,7 +10,7 @@ import { selectorHandler } from "../utils/selectorHandler";
  * @html  String
  * @param  {} options
  * @param  {} baseUrl
- * @returns Promise<QuickCrawlerHtml>
+ * @returns Promise<QuickScraperHtml>
  * @description Scrapes the HTML string
  */
 
@@ -18,7 +18,7 @@ export const scrapeHtml = async ({
   html,
   options,
   baseUrl,
-}: QuickCrawlerHtml): Promise<QuickCrawlerOutput> => {
+}: QuickScraperHtml): Promise<QuickScraperOutput> => {
   const $ = htmlParser(html);
 
   const optionKeys = Object.keys(options);

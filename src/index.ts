@@ -1,2 +1,2 @@
 export * from "./modules";
-export * from "./types/QuickCrawlerType";
+export * from "./types/QuickScraperType";

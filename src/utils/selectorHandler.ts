@@ -1,4 +1,4 @@
-import type { AttributeOutputs } from "../types/QuickCrawlerType";
+import type { AttributeOutputs } from "../types/QuickScraperType";
 import { selectorExtractor } from "./selectorExtractor";
 // Input will take the options -
 /*
