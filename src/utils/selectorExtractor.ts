@@ -51,8 +51,10 @@ export const selectorExtractor = ({
       }
     });
   }
+
   if (!text) {
     delete output.text;
   }
+
   return output;
 };

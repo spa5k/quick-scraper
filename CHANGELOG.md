@@ -1,14 +1,12 @@
 # [1.4.0](https://github.com/spa5k/quick-scraper/compare/v1.3.0...v1.4.0) (2021-11-27)
 
-
 ### Bug Fixes
 
-* **ci:** 💚 fixing build ([b5c6548](https://github.com/spa5k/quick-scraper/commit/b5c65487d1f00c811098b63025c125d20e1d5908))
-
+- **ci:** 💚 fixing build ([b5c6548](https://github.com/spa5k/quick-scraper/commit/b5c65487d1f00c811098b63025c125d20e1d5908))
 
 ### Features
 
-* **deps:** ✨ moved to yarn3 from pnpm ([72ab2a1](https://github.com/spa5k/quick-scraper/commit/72ab2a1e3ee0479d14ca08c28d54f2f1ad7995be))
+- **deps:** ✨ moved to yarn3 from pnpm ([72ab2a1](https://github.com/spa5k/quick-scraper/commit/72ab2a1e3ee0479d14ca08c28d54f2f1ad7995be))
 
 # [1.3.0](https://github.com/spa5k/quick-scraper/compare/v1.2.1...v1.3.0) (2021-11-26)
 

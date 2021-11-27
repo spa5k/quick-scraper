@@ -18,7 +18,7 @@ export const quickScraperHeadless = async ({
   options,
   page,
 }: QuickScraperHeadless): Promise<QuickScraperOutput> => {
-  const $ = await urlParserHeadless(url, page);
+  const { html, raw: $ } = await urlParserHeadless(url, page);
 
   const optionKeys = Object.keys(options);
 
@@ -65,7 +65,7 @@ export const quickScraperHeadless = async ({
   });
 
   return {
-    raw: $,
+    rawString: html,
     data,
   };
 };

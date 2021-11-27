@@ -34,5 +34,9 @@ export type AttributeOutputs = {
 
 export type QuickScraperOutput = {
   data: Record<string, AttributeOutputs>;
-  raw: cheerio.Root;
+  rawString: string;
+};
+
+export type HTMLScraperOutput = {
+  data: Record<string, AttributeOutputs>;
 };
