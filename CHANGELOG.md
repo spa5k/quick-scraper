@@ -1,9 +1,8 @@
 # [1.3.0](https://github.com/spa5k/quick-scraper/compare/v1.2.1...v1.3.0) (2021-11-26)
 
-
 ### Features
 
-* **scraper:** ✨ adding headless mode module ([2dea9e4](https://github.com/spa5k/quick-scraper/commit/2dea9e409359aab1b0604c6c462aef55b5346c19))
+- **scraper:** ✨ adding headless mode module ([2dea9e4](https://github.com/spa5k/quick-scraper/commit/2dea9e409359aab1b0604c6c462aef55b5346c19))
 
 ## [1.2.1](https://github.com/spa5k/quick-scraper/compare/v1.2.0...v1.2.1) (2021-10-06)
 
