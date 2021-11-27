@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/spa5k/quick-scraper/compare/v1.4.0...v1.5.0) (2021-11-27)
+
+
+### Features
+
+* **main:** 💥 removed the sending of cheerio raw structure in output, now it is simple HTML string ([9250515](https://github.com/spa5k/quick-scraper/commit/92505152162669d23ae6e3e0ec55f7fa6c63f9dc))
+
 # [1.4.0](https://github.com/spa5k/quick-scraper/compare/v1.3.0...v1.4.0) (2021-11-27)
 
 ### Bug Fixes
