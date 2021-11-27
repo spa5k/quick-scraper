@@ -72,7 +72,7 @@ await quickScraper({
 /*
 
 {
-  raw: [Function: initialize] {}, // It's the default output from cheerio, use it as you like.
+  rawString: <html>{...}</html> structure of your page in string format, load it in cheerio or do whatever you like with it.
   data: {
     title: { text: 'TypeScript execution and REPL for node.js' },
     docs: { href: 'https://typestrong.org/ts-node/docs/' },
@@ -117,7 +117,7 @@ await scrapeHtml({
 /*
 
 {
-  raw: [Function: initialize] {}, // It's the default output from cheerio, use it as you like.
+  rawString: <html></html> structure of your page in string format, load it in cheerio or do whatever you like with it.
   data: {
     title: { text: 'TypeScript execution and REPL for node.js' },
     docs: { href: 'https://typestrong.org/ts-node/docs/' },
@@ -164,7 +164,7 @@ await quickScraperHeadless({
 /*
 
 {
-  raw: [Function: initialize] {}, // It's the default output from cheerio, use it as you like.
+  rawString: <html>{...}</html> structure of your page in string format, load it in cheerio or do whatever you like with it.
   data: {
     title: { text: 'TypeScript execution and REPL for node.js' },
     docs: { href: 'https://typestrong.org/ts-node/docs/' },
@@ -201,7 +201,6 @@ All custom attributes will be accessible under Attrs key inside `output.data`
 /*
 
 {
-  raw: [Function: initialize] {}, // It's the default output from cheerio, use it as you like.
   data: {
     relStatus: { attrs: { rel: "noopener noreferrer" } }
   }
@@ -253,12 +252,6 @@ scrapedData.data.test.lists?
 ### Visualization of this Repo.
 
 ![Visualization of this repo](./diagram.svg)
-
-### TODO
-
-- Add support for custom nth number in list.
-- Add more tests.
-- Direct transformation functions to deal with the scraped results and outputting it.
 
 ### Libraries Used
 

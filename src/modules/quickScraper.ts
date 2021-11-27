@@ -17,7 +17,7 @@ export const quickScraper = async ({
   url,
   options,
 }: QuickScraper): Promise<QuickScraperOutput> => {
-  const $ = await urlParser(url);
+  const { html, raw: $ } = await urlParser(url);
 
   const optionKeys = Object.keys(options);
 
@@ -64,7 +64,7 @@ export const quickScraper = async ({
   });
 
   return {
-    raw: $,
     data,
+    rawString: html,
   };
 };

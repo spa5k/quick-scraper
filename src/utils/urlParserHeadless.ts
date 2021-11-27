@@ -5,8 +5,12 @@ import type { Page } from "puppeteer";
 export const urlParserHeadless = async (
   url: string,
   page: Page
-): Promise<cheerio.Root> => {
+): Promise<{
+  html: string;
+  raw: cheerio.Root;
+}> => {
   const isUrlExist = await isUrlOnline(url);
+
   if (!isUrlExist) {
     throw new Error("No Such url");
   }
@@ -16,7 +20,10 @@ export const urlParserHeadless = async (
 
   await navigationPromise;
 
-  const context = await page.content();
+  const html = await page.content();
 
-  return load(context);
+  return {
+    raw: load(html),
+    html,
+  };
 };
