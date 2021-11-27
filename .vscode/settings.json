@@ -8,7 +8,8 @@
     "README",
     "types",
     "lint",
-    "docs"
+    "docs",
+    "ci"
   ],
   "search.exclude": {
     "**/.yarn": true,
