@@ -178,8 +178,6 @@ await quickScraperHeadless({
 /
 ```
 
-
-
 ### More Examples.
 
 #### Custom Attribute

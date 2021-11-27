@@ -30,14 +30,22 @@
     "@types/cheerio": "0.22.30",
     "@types/jest": "27.0.3",
     "@types/node": "16.11.10",
+    "@typescript-eslint/eslint-plugin": "latest",
     "commitizen": "4.2.4",
     "cross-env": "^7.0.3",
     "dotenv": "10.0.0",
-    "esbuild": "0.13.15",
+    "esbuild": "0.14.0",
     "esbuild-jest": "0.5.0",
     "eslint": "8.3.0",
     "eslint-config-galex": "3.3.4",
+    "eslint-import-resolver-node": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-inclusive-language": "latest",
+    "eslint-plugin-jest-formatting": "latest",
+    "eslint-plugin-promise": "latest",
+    "eslint-plugin-sonarjs": "latest",
     "eslint-plugin-typescript-sort-keys": "2.1.0",
+    "eslint-plugin-unicorn": "latest",
     "husky": "7.0.4",
     "jest": "27.3.1",
     "nodemon": "2.0.15",
@@ -92,5 +100,6 @@
     "puppeteer": {
       "optional": true
     }
-  }
+  },
+  "packageManager": "yarn@3.1.1"
 }
