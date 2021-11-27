@@ -1777,7 +1777,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:5.4.0, @typescript-eslint/eslint-plugin@npm:latest":
+"@typescript-eslint/eslint-plugin@npm:5.4.0, @typescript-eslint/eslint-plugin@npm:^5.4.0":
   version: 5.4.0
   resolution: "@typescript-eslint/eslint-plugin@npm:5.4.0"
   dependencies:
@@ -4617,7 +4617,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-node@npm:^0.3.6, eslint-import-resolver-node@npm:latest":
+"eslint-import-resolver-node@npm:^0.3.6":
   version: 0.3.6
   resolution: "eslint-import-resolver-node@npm:0.3.6"
   dependencies:
@@ -4638,7 +4638,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:2.25.3, eslint-plugin-import@npm:latest":
+"eslint-plugin-import@npm:2.25.3, eslint-plugin-import@npm:^2.25.3":
   version: 2.25.3
   resolution: "eslint-plugin-import@npm:2.25.3"
   dependencies:
@@ -4661,7 +4661,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-inclusive-language@npm:latest":
+"eslint-plugin-inclusive-language@npm:^2.1.1":
   version: 2.1.1
   resolution: "eslint-plugin-inclusive-language@npm:2.1.1"
   dependencies:
@@ -4683,7 +4683,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest-formatting@npm:3.1.0, eslint-plugin-jest-formatting@npm:latest":
+"eslint-plugin-jest-formatting@npm:3.1.0, eslint-plugin-jest-formatting@npm:^3.1.0":
   version: 3.1.0
   resolution: "eslint-plugin-jest-formatting@npm:3.1.0"
   peerDependencies:
@@ -4731,7 +4731,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-promise@npm:5.1.1, eslint-plugin-promise@npm:latest":
+"eslint-plugin-promise@npm:5.1.1, eslint-plugin-promise@npm:^5.1.1":
   version: 5.1.1
   resolution: "eslint-plugin-promise@npm:5.1.1"
   peerDependencies:
@@ -4773,7 +4773,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-sonarjs@npm:0.10.0, eslint-plugin-sonarjs@npm:latest":
+"eslint-plugin-sonarjs@npm:0.10.0, eslint-plugin-sonarjs@npm:^0.10.0":
   version: 0.10.0
   resolution: "eslint-plugin-sonarjs@npm:0.10.0"
   peerDependencies:
@@ -4808,7 +4808,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:39.0.0, eslint-plugin-unicorn@npm:latest":
+"eslint-plugin-unicorn@npm:39.0.0, eslint-plugin-unicorn@npm:^39.0.0":
   version: 39.0.0
   resolution: "eslint-plugin-unicorn@npm:39.0.0"
   dependencies:
@@ -10021,7 +10021,7 @@ __metadata:
     "@types/cheerio": 0.22.30
     "@types/jest": 27.0.3
     "@types/node": 16.11.10
-    "@typescript-eslint/eslint-plugin": latest
+    "@typescript-eslint/eslint-plugin": ^5.4.0
     chardet: ^1.4.0
     cheerio: ^1.0.0-rc.10
     commitizen: 4.2.4
@@ -10031,14 +10031,14 @@ __metadata:
     esbuild-jest: 0.5.0
     eslint: 8.3.0
     eslint-config-galex: 3.3.4
-    eslint-import-resolver-node: latest
-    eslint-plugin-import: latest
-    eslint-plugin-inclusive-language: latest
-    eslint-plugin-jest-formatting: latest
-    eslint-plugin-promise: latest
-    eslint-plugin-sonarjs: latest
+    eslint-import-resolver-node: ^0.3.6
+    eslint-plugin-import: ^2.25.3
+    eslint-plugin-inclusive-language: ^2.1.1
+    eslint-plugin-jest-formatting: ^3.1.0
+    eslint-plugin-promise: ^5.1.1
+    eslint-plugin-sonarjs: ^0.10.0
     eslint-plugin-typescript-sort-keys: 2.1.0
-    eslint-plugin-unicorn: latest
+    eslint-plugin-unicorn: ^39.0.0
     got: ^11.8.3
     husky: 7.0.4
     iconv-lite: ^0.6.3
