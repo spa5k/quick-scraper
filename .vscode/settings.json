@@ -9,7 +9,8 @@
     "types",
     "lint",
     "docs",
-    "ci"
+    "ci",
+    "build"
   ],
   "search.exclude": {
     "**/.yarn": true,
