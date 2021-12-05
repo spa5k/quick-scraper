@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/spa5k/quick-scraper/compare/v1.5.0...v1.6.0) (2021-12-05)
+
+
+### Features
+
+* **build:** ✨ removing minification, adding map ([e01de78](https://github.com/spa5k/quick-scraper/commit/e01de78e2a98fe7c0b9e3c11ae349bede5e1c7cc))
+
 # [1.5.0](https://github.com/spa5k/quick-scraper/compare/v1.4.0...v1.5.0) (2021-11-27)
 
 
