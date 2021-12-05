@@ -94,7 +94,7 @@
   },
   "typings": "dist/index.d.ts",
   "peerDependencies": {
-    "puppeteer": "12.0.0"
+    "puppeteer": "12.0.1"
   },
   "peerDependenciesMeta": {
     "puppeteer": {
