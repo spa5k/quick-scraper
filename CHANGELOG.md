@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/spa5k/quick-scraper/compare/v1.6.0...v1.7.0) (2021-12-12)
+
+
+### Features
+
+* **scraper:** ✨ moving to playwright from puppeteer ([ec1fe71](https://github.com/spa5k/quick-scraper/commit/ec1fe71237af14cfedeb32fd9be04eb4db2f118c))
+
 # [1.6.0](https://github.com/spa5k/quick-scraper/compare/v1.5.0...v1.6.0) (2021-12-05)
 
 
