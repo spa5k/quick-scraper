@@ -1,7 +1,7 @@
 {
   "name": "quick-scraper",
   "description": "An easy, lightweight scraper for humans with many inbuilt features..",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "author": "Unbuttun <unbuttun@gmail.com>",
   "bugs": {
     "url": "https://github.com/spa5k/quick-scraper/issues"
