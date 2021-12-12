@@ -1,6 +1,6 @@
 import { load } from "cheerio";
 import { isUrlOnline } from "is-url-online";
-import type { Page } from "puppeteer";
+import type { Page } from "playwright-chromium";
 
 export const urlParserHeadless = async (
   url: string,

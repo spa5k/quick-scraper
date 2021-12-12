@@ -1,4 +1,4 @@
-import type { Page } from "puppeteer";
+import type { Page } from "playwright-chromium";
 
 export type QuickScraper = {
   options: Record<string, SelectorOptions>;

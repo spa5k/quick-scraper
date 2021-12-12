@@ -1,4 +1,5 @@
-import puppeteer from "puppeteer";
+// import puppeteer from "puppeteer";
+import { chromium } from "playwright-chromium";
 import { quickScraperHeadless } from "../src";
 
 const testsArray: {
@@ -46,7 +47,7 @@ describe("Test for PTWXZ - TEXT SELECTION - HEADLESS", () => {
     const { name } = attr;
 
     test(`#${index + 1}: Testing ${url}`, async () => {
-      const browser = await puppeteer.launch({ headless: true });
+      const browser = await chromium.launch({ headless: true });
       const page = await browser.newPage();
 
       await expect(
