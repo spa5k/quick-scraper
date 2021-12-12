@@ -1,4 +1,4 @@
-import puppeteer from "puppeteer";
+import { chromium } from "playwright-chromium";
 import { quickScraperHeadless } from "../src";
 
 const testsArray: {
@@ -28,7 +28,7 @@ jest.setTimeout(25_000);
 describe("Test for PTWXZ - TEXT SELECTION - HEADLESS", () => {
   testsArray.forEach(({ output, selector, url }, index) => {
     test(`#${index + 1}: Testing ${url}`, async () => {
-      const browser = await puppeteer.launch({ headless: true });
+      const browser = await chromium.launch({ headless: true });
       const page = await browser.newPage();
 
       await expect(
