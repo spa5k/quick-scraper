@@ -27,7 +27,7 @@ An easy, lightweight scraper built using typescript for good developer experienc
 </p>
 ```
 
-In this case, if you want to select the text `abcd`, it won't work ootb as there are some limitiations in the way jquery does it directly, to handle such cases, use the raw output object and then apply the logic in there.
+In this case, if you want to select the text `abcd`, it won't work ootb as there are some limitiations in the way jquery does it directly, to handle such cases, use the raw output text, send it to cheerio or other HTML parsers, and then apply the logic in there.
 
 ## Installation
 
@@ -72,7 +72,7 @@ await quickScraper({
 /*
 
 {
-  rawString: <html>{...}</html> structure of your page in string format, load it in cheerio or do whatever you like with it.
+  rawString: <html></html> structure of your page in string format, load it in cheerio or do whatever you like with it,
   data: {
     title: { text: 'TypeScript execution and REPL for node.js' },
     docs: { href: 'https://typestrong.org/ts-node/docs/' },
@@ -117,7 +117,7 @@ await scrapeHtml({
 /*
 
 {
-  rawString: <html></html> structure of your page in string format, load it in cheerio or do whatever you like with it.
+  rawString: <html></html> structure of your page in string format, load it in cheerio or do whatever you like with it,
   data: {
     title: { text: 'TypeScript execution and REPL for node.js' },
     docs: { href: 'https://typestrong.org/ts-node/docs/' },
@@ -164,7 +164,7 @@ await quickScraperHeadless({
 /*
 
 {
-  rawString: <html>{...}</html> structure of your page in string format, load it in cheerio or do whatever you like with it.
+  rawString: <html>{...}</html> structure of your page in string format, load it in cheerio or do whatever you like with it,
   data: {
     title: { text: 'TypeScript execution and REPL for node.js' },
     docs: { href: 'https://typestrong.org/ts-node/docs/' },
@@ -227,7 +227,7 @@ scrapedData.data.test.lists?
 /*
 
 {
-  raw: [Function: initialize] {}, // It's the default output from cheerio, use it as you like.
+  raw: <html></html> structure of your page in string format, load it in cheerio or do whatever you like with it,
   data: {
     chapters: {
       lists: [
